@@ -1,0 +1,235 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2025-03-15T12:26:23.060Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3477000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.automation.demo.stepdefinitions.Stepdefinitions.openSetup()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "Perform Google search and fetch first results",
+        "description": "",
+        "id": "google-search;perform-google-search-and-fetch-first-results",
+        "after": [
+          {
+            "result": {
+              "duration": 802000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.automation.demo.stepdefinitions.Stepdefinitions.closeSetup()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 6,
+            "name": "User launches a browser",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "User navigates to Google home page",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "User enters search text as \"Jack Reacher By Lee Child\"",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "User clicks on Google Search button",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "Search Results is displayed",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "Test retrieves details of \"1\" result",
+            "match": {},
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@GoogleSearch"
+          },
+          {
+            "name": "@FetchFirstResults"
+          }
+        ]
+      }
+    ],
+    "name": "Google Search",
+    "description": "",
+    "id": "google-search",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/GoogleSearch.feature",
+    "tags": [
+      {
+        "name": "@GoogleSearch",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2025-03-15T12:26:27.556Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1501000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.automation.demo.stepdefinitions.Stepdefinitions.openSetup()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "Login to the Parabank application with valid CREDS",
+        "description": "",
+        "id": "para-bank-login-functionality;login-to-the-parabank-application-with-valid-creds",
+        "after": [
+          {
+            "result": {
+              "duration": 798000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.automation.demo.stepdefinitions.Stepdefinitions.closeSetup()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3672000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User navigates to bank home page",
+            "match": {
+              "location": "com.automation.demo.stepdefinitions.Stepdefinitions.userEntersSearchTextAs()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 158000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User types the \"demouser\" in username field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "demouser",
+                  "offset": 16
+                }
+              ],
+              "location": "com.automation.demo.stepdefinitions.Stepdefinitions.userEntersUsername(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 154000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User types the \"rest_123\" in password field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "rest_123",
+                  "offset": 16
+                }
+              ],
+              "location": "com.automation.demo.stepdefinitions.Stepdefinitions.userEntersPassword(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 9,
+            "name": "User should able to login in the system",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@GoogleSearch"
+          },
+          {
+            "name": "@FetchFirstResults"
+          }
+        ]
+      }
+    ],
+    "name": "Para Bank Login Functionality",
+    "description": "",
+    "id": "para-bank-login-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/login.feature",
+    "tags": [
+      {
+        "name": "@GoogleSearch",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
