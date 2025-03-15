@@ -81,7 +81,7 @@ public class RegisterPage {
 		this.password.sendKeys(repeatedPassword);
 	}
 	
-	 void clickRegister()
+	 public void clickRegister()
 	{
 		register.click();
 	}
