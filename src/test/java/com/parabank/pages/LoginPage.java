@@ -10,11 +10,13 @@ public class LoginPage {
 	
 
     @FindBy(xpath="//input[@name='username']")
-    WebElement username;
+    private WebElement username;
     @FindBy(xpath="//input[@name='password']")
-    WebElement password;
+    private WebElement password;
     @FindBy(xpath="//input[@value='Log In']")
-    WebElement submitLogin;
+    private WebElement submitLogin;
+    @FindBy(xpath="//a[text()='Register']")
+    private WebElement registerLink;
     
     
 	public LoginPage (WebDriver driver)
@@ -42,5 +44,7 @@ public class LoginPage {
     {
     	submitLogin.click();
     }
+    
+    
 
 }
