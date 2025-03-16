@@ -44,6 +44,10 @@ public class LoginPage {
     {
     	submitLogin.click();
     }
+    public void clickOnRegistration()
+    {
+    	registerLink.click();
+    }
     
     
 
