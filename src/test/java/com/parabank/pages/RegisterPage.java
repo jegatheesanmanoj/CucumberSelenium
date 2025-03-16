@@ -4,14 +4,18 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import io.cucumber.messages.internal.com.google.protobuf.Duration;
 
 public class RegisterPage {
-	
+
 	WebDriver driver;
-	
+
 	@FindBy(xpath="//input[@name='customer.firstName']")
 	private WebElement firstName;
-	@FindBy(xpath="//input[@name='customer.lastname']")
+	@FindBy(xpath="//input[@name='customer.lastName']")
 	private WebElement lastname;
 	@FindBy(xpath="//input[@name='customer.address.street']")
 	private WebElement street;
@@ -31,17 +35,31 @@ public class RegisterPage {
 	private WebElement repeatedPassword;
 	@FindBy(xpath="//input[@value='Register']")
 	private WebElement register;
-	
-	
-	
+
+
+
+	@FindBy(xpath="//div[@id='rightPanel']//following::h1[@class='title']/following-sibling::p")
+	WebElement successMessage;
+	@FindBy(xpath="//a[text()='Log Out']")
+	private WebElement logOut;
+
+
+	WebDriverWait wait;
+
+
+
 	public RegisterPage (WebDriver driver)
 	{
 		this.driver=driver;
+		wait= new WebDriverWait(driver, 50);
 		PageFactory.initElements(driver, this);
+
+
 	}
-	
+
 	public void typeFirstname(String firstName)
 	{
+		wait.until(ExpectedConditions.visibilityOf(this.firstName));
 		this.firstName.sendKeys(firstName);
 	}
 	public void typeLastname(String lastname)
@@ -78,12 +96,31 @@ public class RegisterPage {
 	}
 	public void typeRepeatedPassword(String repeatedPassword)
 	{
-		this.password.sendKeys(repeatedPassword);
+		this.repeatedPassword.sendKeys(repeatedPassword);
 	}
-	
-	 public void clickRegister()
+
+	public void clickRegister()
 	{
 		register.click();
 	}
+	public String getSuccessMessage()
+	{
+		wait.until(ExpectedConditions.visibilityOf(successMessage));
+		return successMessage.getText();
+	}
+
+	public void clickLogOut()
+	{
+		wait.until(ExpectedConditions.visibilityOf(logOut));
+		logOut.click();
+	}
+	
+	public Boolean checkLogoutLink()
+	{
+		wait.until(ExpectedConditions.visibilityOf(logOut));		
+		return logOut.isDisplayed();
+	}
+	
+
 
 }
