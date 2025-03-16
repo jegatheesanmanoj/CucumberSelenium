@@ -3,11 +3,11 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2025-03-15T12:26:23.060Z",
+        "start_timestamp": "2025-03-16T03:10:05.125Z",
         "before": [
           {
             "result": {
-              "duration": 3477000000,
+              "duration": 2540000000,
               "status": "passed"
             },
             "match": {
@@ -15,14 +15,14 @@
             }
           }
         ],
-        "line": 5,
-        "name": "Perform Google search and fetch first results",
+        "line": 6,
+        "name": "Register to the Parabank application with valid details",
         "description": "",
-        "id": "google-search;perform-google-search-and-fetch-first-results",
+        "id": "para-bank-login-functionality;register-to-the-parabank-application-with-valid-details",
         "after": [
           {
             "result": {
-              "duration": 802000000,
+              "duration": 796000000,
               "status": "passed"
             },
             "match": {
@@ -35,94 +35,74 @@
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 1919000000,
+              "status": "passed"
             },
-            "line": 6,
-            "name": "User launches a browser",
-            "match": {},
+            "line": 7,
+            "name": "User navigates to bank home page",
+            "match": {
+              "location": "com.automation.demo.stepdefinitions.Stepdefinitions.userNavigatesToHomePage()"
+            },
             "keyword": "Given "
           },
           {
             "result": {
-              "status": "skipped"
-            },
-            "line": 7,
-            "name": "User navigates to Google home page",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
+              "duration": 2357000000,
+              "status": "passed"
             },
             "line": 8,
-            "name": "User enters search text as \"Jack Reacher By Lee Child\"",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
+            "name": "User types the required registration details",
+            "match": {
+              "location": "com.automation.demo.stepdefinitions.Stepdefinitions.userEntersRegistrationDetails()"
             },
-            "line": 9,
-            "name": "User clicks on Google Search button",
-            "match": {},
             "keyword": "When "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 428000000,
+              "status": "passed"
             },
-            "line": 10,
-            "name": "Search Results is displayed",
-            "match": {},
-            "keyword": "Then "
+            "line": 9,
+            "name": "User submits the registration",
+            "match": {
+              "location": "com.automation.demo.stepdefinitions.Stepdefinitions.usersubmitsRegistration()"
+            },
+            "keyword": "And "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 1477000000,
+              "status": "passed"
             },
-            "line": 11,
-            "name": "Test retrieves details of \"1\" result",
-            "match": {},
-            "keyword": "And "
+            "line": 10,
+            "name": "User should able to login in the system",
+            "match": {
+              "location": "com.automation.demo.stepdefinitions.Stepdefinitions.userShouldLoginToTheSystem()"
+            },
+            "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@GoogleSearch"
+            "name": "@ParaBankSelenium"
           },
           {
-            "name": "@FetchFirstResults"
+            "name": "@Registrationtest"
+          },
+          {
+            "name": "@Sanity"
+          },
+          {
+            "name": "@Regression"
           }
         ]
-      }
-    ],
-    "name": "Google Search",
-    "description": "",
-    "id": "google-search",
-    "keyword": "Feature",
-    "uri": "file:src/test/resources/features/GoogleSearch.feature",
-    "tags": [
+      },
       {
-        "name": "@GoogleSearch",
-        "type": "Tag",
-        "location": {
-          "line": 1,
-          "column": 1
-        }
-      }
-    ]
-  },
-  {
-    "line": 2,
-    "elements": [
-      {
-        "start_timestamp": "2025-03-15T12:26:27.556Z",
+        "start_timestamp": "2025-03-16T03:10:14.811Z",
         "before": [
           {
             "result": {
-              "duration": 1501000000,
+              "duration": 1406000000,
               "status": "passed"
             },
             "match": {
@@ -130,14 +110,14 @@
             }
           }
         ],
-        "line": 5,
+        "line": 13,
         "name": "Login to the Parabank application with valid CREDS",
         "description": "",
         "id": "para-bank-login-functionality;login-to-the-parabank-application-with-valid-creds",
         "after": [
           {
             "result": {
-              "duration": 798000000,
+              "duration": 780000000,
               "status": "passed"
             },
             "match": {
@@ -150,68 +130,74 @@
         "steps": [
           {
             "result": {
-              "duration": 3672000000,
+              "duration": 2006000000,
               "status": "passed"
             },
-            "line": 6,
+            "line": 14,
             "name": "User navigates to bank home page",
             "match": {
-              "location": "com.automation.demo.stepdefinitions.Stepdefinitions.userEntersSearchTextAs()"
+              "location": "com.automation.demo.stepdefinitions.Stepdefinitions.userNavigatesToHomePage()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 158000000,
+              "duration": 269000000,
               "status": "passed"
             },
-            "line": 7,
-            "name": "User types the \"demouser\" in username field",
+            "line": 15,
+            "name": "User types the registeredUser in username field",
             "match": {
-              "arguments": [
-                {
-                  "val": "demouser",
-                  "offset": 16
-                }
-              ],
-              "location": "com.automation.demo.stepdefinitions.Stepdefinitions.userEntersUsername(java.lang.String)"
+              "location": "com.automation.demo.stepdefinitions.Stepdefinitions.userEntersUsername()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 154000000,
+              "duration": 129000000,
               "status": "passed"
             },
-            "line": 8,
-            "name": "User types the \"rest_123\" in password field",
+            "line": 16,
+            "name": "User types the registeredPassword in password field",
             "match": {
-              "arguments": [
-                {
-                  "val": "rest_123",
-                  "offset": 16
-                }
-              ],
-              "location": "com.automation.demo.stepdefinitions.Stepdefinitions.userEntersPassword(java.lang.String)"
+              "location": "com.automation.demo.stepdefinitions.Stepdefinitions.userEntersPassword()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 1084000000,
+              "status": "passed"
             },
-            "line": 9,
-            "name": "User should able to login in the system",
-            "match": {},
+            "line": 17,
+            "name": "User submits the login",
+            "match": {
+              "location": "com.automation.demo.stepdefinitions.Stepdefinitions.userSubmitsRequest()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 127000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User should able to navigate to accounts page",
+            "match": {
+              "location": "com.automation.demo.stepdefinitions.Stepdefinitions.userNavigatesToAccountspage()"
+            },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@GoogleSearch"
+            "name": "@ParaBankSelenium"
           },
           {
-            "name": "@FetchFirstResults"
+            "name": "@Logintest"
+          },
+          {
+            "name": "@Regression"
           }
         ]
       }
@@ -223,7 +209,7 @@
     "uri": "file:src/test/resources/features/login.feature",
     "tags": [
       {
-        "name": "@GoogleSearch",
+        "name": "@ParaBankSelenium",
         "type": "Tag",
         "location": {
           "line": 1,
