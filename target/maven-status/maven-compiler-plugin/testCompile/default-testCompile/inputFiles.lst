@@ -1,4 +1,6 @@
-C:\Users\Admin\Downloads\cucumber-selenium-master\cucumber-selenium-master\src\test\java\com\parabank\pages\LoginPage.java
-C:\Users\Admin\Downloads\cucumber-selenium-master\cucumber-selenium-master\src\test\java\com\automation\demo\stepdefinitions\Stepdefinitions.java
-C:\Users\Admin\Downloads\cucumber-selenium-master\cucumber-selenium-master\src\test\java\com\automation\demo\TestRunner.java
-C:\Users\Admin\Downloads\cucumber-selenium-master\cucumber-selenium-master\src\test\java\com\automation\demo\driver\ChromeBrowserDriver.java
+D:\gitrepo\CucumberSelenium\src\test\java\com\parabank\pages\LoginPage.java
+D:\gitrepo\CucumberSelenium\src\test\java\com\automation\demo\TestRunner.java
+D:\gitrepo\CucumberSelenium\src\test\java\com\parabank\pages\RegisterPage.java
+D:\gitrepo\CucumberSelenium\src\test\java\com\automation\demo\helper\Helper.java
+D:\gitrepo\CucumberSelenium\src\test\java\com\automation\demo\driver\ChromeBrowserDriver.java
+D:\gitrepo\CucumberSelenium\src\test\java\com\automation\demo\stepdefinitions\Stepdefinitions.java
